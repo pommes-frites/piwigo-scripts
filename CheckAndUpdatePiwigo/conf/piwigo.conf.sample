@@ -1,0 +1,26 @@
+#
+# Config file with piwigo parameters
+# $basedir will be replaced with the dir of the checkAndUpdatePiwigo.sh script.
+#
+
+# piwigo base url 
+url=http://piwigo:8080
+
+# piwigo username and password 
+username=
+password=
+
+# path with physical categories
+piwigoDir=/path/to/pictures
+# path to a dir where the script can save the folder structure of the physical categories
+listDir="$basedir"/check4DirChangesList
+# pattern for folder that needs to be excluded.
+notPath="*/pwg_representative"
+
+# id of the piwigo site that needs a sync in order to add a new category.
+siteToSync=2
+
+# commands for events. <folder> will be replaced with the actual folder path.
+newFolderCommand="$basedir/onNewFolder.sh <folder>"
+changedFilesCommand="$basedir/onChangedFiles.sh <folder>"
+changedSubfoldersCommand=""
