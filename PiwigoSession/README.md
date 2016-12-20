@@ -6,3 +6,5 @@ Logs in the user *username*/*password* to piwigo with URL *piwigoBaseUrl* and sa
 
 <pre>pwg.session.logout.sh &lt;piwigoBaseUrl> &lt;sessionCookiePath></pre>
 Logs out a user from piwigo with URL *piwigoBaseUrl* identified by the session cookie in the *sessionCookiePath*.
+
+For piwigo communication, wget is required.
