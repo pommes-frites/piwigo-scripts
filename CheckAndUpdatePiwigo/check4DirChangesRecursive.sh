@@ -1,7 +1,7 @@
 #!/bin/bash
 
 [[ $# < 2 ]] && {
-    echo "ERROR $(date -Is) - Need more parameter. Call $0 <listDirRoot> <checkDirRoot> [ <newFolderCommand> [ <changedFilesCommand> [ <changedSubFoldersCommand> [ <notPath> ]]]]"
+    echo "ERROR $(date -Is) - Need more parameter. Call $0 <listDirRoot> <checkDirRoot> [ newFolderCommand [ changedFilesCommand [ changedSubFoldersCommand [ notPath ] ] ] ]"
     exit 1
 }
 

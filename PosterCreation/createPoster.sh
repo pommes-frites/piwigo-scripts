@@ -1,7 +1,7 @@
 #!/bin/bash
 
 [[ $# < 1 ]] && {
-    echo "ERROR $(date -Is) - Need more parameter. Call $0 <filePath> [ overwrite ]"
+    echo "ERROR $(date -Is) - Need more parameter. Call $0 <filePath> [overwrite]"
     exit 1
 }
 
