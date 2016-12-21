@@ -1,11 +1,9 @@
 # piwigo-scripts CheckAndUpdatePiwigo
-Unix command line scripts that check that analyze a specified path. For changed 
+Unix command line scripts that analyzes a specified path. For changed 
 files or folders it calls the corresponding script file.
 
-## Configuration
 Create the file conf/piwigo.conf. A sample file is available. 
 
-## Scripts
 <pre>start.sh</pre>
 Calls checkAndUpdatePiwigo.sh and redirects stdout and stderr to 
 log/*yyyyMMdd_hhmmss*.log.
@@ -24,7 +22,7 @@ in the following order.
 As indicated with by the relative script paths, these script folders needs to be
 on the same level as this script folder.
 
-<pre>check4DirChangesRecursive.sh &lt;listDirRoot> &lt;checkDirRoot> [ newFolderCommand [ changedFilesCommand [ changedSubFoldersCommand [ notPath ] ] ] ]
+<pre>check4DirChangesRecursive.sh &lt;listDirRoot> &lt;checkDirRoot> [ newFolderCommand [ changedFilesCommand [ changedSubFoldersCommand [ notPath ] ] ] ]</pre>
 Checks recursively if any file or subfolder in path *checkDirRoot* were changed. The 
 path *listDirRoot* will be used to save the current state of the structure.
 For any new folder, *newFolderCommand* will be called. For any file list change
