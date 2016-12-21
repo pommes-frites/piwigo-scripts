@@ -27,5 +27,5 @@ Checks recursively if any file or subfolder in path *checkDirRoot* were changed.
 path *listDirRoot* will be used to save the current state of the structure.
 For any new folder, *newFolderCommand* will be called. For any file list change
 in a folder, *changedFilesCommand* will be called. For any subfolder list change
-in a folder, *changedSubFoldersCommand will be called. With *notPath* it is
+in a folder, *changedSubFoldersCommand* will be called. With *notPath* it is
 possible to exclude specified folders. See <code>find -not -path</code> for details.
